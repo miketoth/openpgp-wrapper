@@ -12,8 +12,6 @@ var pubkey ='-----BEGIN PGP PUBLIC KEY BLOCK-----\r\nVersion: OpenPGP.js v2.5.12
 
   var passphrase = 'super long and hard to guess secret';
 
-  function betterEncryptFunction(message, 
-
   // sign message with privKey
   var privKeyObj = openpgp.key.readArmored(privkey).keys[0];
   privKeyObj.decrypt(passphrase);
